@@ -1,7 +1,7 @@
 # Lab 003 Function Exploration with your Peers!
 
 ## Objectives
-In this lab, you will build a **VERY** basic peer-to-peer chat system using existing Python libraries and the [lab_chat.py](../lab_chat.py) file shared in this repo. The goal is to create functions that allow users to join a chat group and send and receive messages. You’ll explore core concepts of Python defining functions, parameters, simple loops, and importing and calling existing functions.
+In this lab, you will build a **VERY** basic peer-to-peer chat system using existing Python libraries and the [lab_chat.py](lab_chat.py) file shared in this repo. The goal is to create functions that allow users to join a chat group and send and receive messages. You’ll explore core concepts of Python defining functions, parameters, simple loops, and importing and calling existing functions.
 
 This lab is divided into four parts and should take approximately two hours to complete.
 
@@ -42,10 +42,10 @@ In this part, you'll create several basic functions to handle user input and dat
 3. Your function should return the typed message.
 
 ## Part 2: Understanding Peer-to-Peer Communication Functions
-Now that you have user inputs ready, you’ll move to handling peer-to-peer communication using the [lab_chat.py](../lab_chat.py) code. In this file, there are some preexisting functions to connect/become a peer-to-peer node, join a chat group, and get a communication channel to send and receive messages. Your job is to identify these functions and their parts, then integrate these functions into your functions.
+Now that you have user inputs ready, you’ll move to handling peer-to-peer communication using the [lab_chat.py](lab_chat.py) code. In this file, there are some preexisting functions to connect/become a peer-to-peer node, join a chat group, and get a communication channel to send and receive messages. Your job is to identify these functions and their parts, then integrate these functions into your functions.
 
 * In your project create a **README.md** file
-* For each function in the [lab_chat.py](../lab_chat.py) file add the following to your **README.md** file:
+* For each function in the [lab_chat.py](lab_chat.py) file add the following to your **README.md** file:
   1. Full Function Header, and indicate the function name with a comment.
   ```python
   # Example
