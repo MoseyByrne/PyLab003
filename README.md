@@ -1,7 +1,7 @@
 # Lab 003 Function Exploration with your Peers!
 
 ## Objectives
-In this lab, you will build a **VERY** basic peer-to-peer chat system using existing Python libraries and the [lab_chat.py](lab_chat.py) file shared in this repo. The goal is to create functions that allow users to join a chat group and send and receive messages. You’ll explore core concepts of Python defining functions, parameters, simple loops, and importing and calling existing functions.
+In this lab, you will build a **VERY** basic peer-to-peer chat system using existing Python libraries and the [lab_chat.py](../lab_chat.py) file shared in this repo. The goal is to create functions that allow users to join a chat group and send and receive messages. You’ll explore core concepts of Python defining functions, parameters, simple loops, and importing and calling existing functions.
 
 This lab is divided into four parts and should take approximately two hours to complete.
 
@@ -42,15 +42,25 @@ In this part, you'll create several basic functions to handle user input and dat
 3. Your function should return the typed message.
 
 ## Part 2: Understanding Peer-to-Peer Communication Functions
-Now that you have user inputs ready, you’ll move to handling peer-to-peer communication using the [lab_chat.py](lab_chat.py) code. In this file, there are some preexisting functions to connect/become a peer-to-peer node, join a chat group, and get a communication channel to send and receive messages. Your job is to identify these functions and their parts, then integrate these functions into your functions.
+Now that you have user inputs ready, you’ll move to handling peer-to-peer communication using the [lab_chat.py](../lab_chat.py) code. In this file, there are some preexisting functions to connect/become a peer-to-peer node, join a chat group, and get a communication channel to send and receive messages. Your job is to identify these functions and their parts, then integrate these functions into your functions.
 
 * In your project create a **README.md** file
-* For each function in the [lab_chat.py](lab_chat.py) file add the following to your **README.md** file:
+* For each function in the [lab_chat.py](../lab_chat.py) file add the following to your **README.md** file:
   1. Full Function Header, and indicate the function name with a comment.
   ```python
   # Example
   def chat_task(ctx, pipe, n, group):  # function name is chat_task
   ```
+  ```python
+    def get_peer_node(username): # function name is get_peer_node
+  ```
+  ```python
+    def join_group(node, group): #function name is join_group
+  ```
+  ```python
+    def get_channel(node, group): # funtion name is get_channel 
+  ```
+
   2. List all parameters and what you think they are. Put "UNSURE" if you don't have a guess.
   ```shell
   # Example
@@ -59,10 +69,24 @@ Now that you have user inputs ready, you’ll move to handling peer-to-peer comm
   n: This is the peer to peer node my chat app is connected as
   group: This is the peer chat group I wanted to join
   ```
+  ```shell
+  username: this maybe the username we get from get_username
+  ```
   3. Note if the function **returns** anything. If it does, note what you believe it returns, and make a final note about what you believe the function may do.
   ```shell
   # Example
   The chat_task method does not return anything, it appears to be the send/recieve manager.
+  ```
+  ```shell
+  n: is returned and it maybe a peer node.
+  ```
+  ```shell
+  node: is returned this maybe your own node
+  group: is returded and maybe the group Im trying to join
+  ```
+   ```shell
+  node: is returned this maybe the node of the group Im trying to join
+  group: is returned the group Im trying to join
   ```
 
 ## Combining the Functions to Create the Peer-to-Peer Chat
